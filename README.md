@@ -2,6 +2,8 @@
 
 FastAPI is a high performance simple framework for building APIs(Application Programming Interface).
 
+It is widely used to write production level API's for ML services.
+
 ## Setup
 
 **Important:** *More info [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)*
@@ -55,10 +57,14 @@ FastAPI is a high performance simple framework for building APIs(Application Pro
     ```shell
     uvicorn app:app --reload
     ```
+    or
+    ```shell
+    uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+    ```
 
-    * [http://127.0.0.1/](http://127.0.0.1/) You can then navigate to the localhost to see your app in action.
-    * [http://127.0.0.1/docs](http://127.0.0.1/docs) This yields the OpenAPI Swagger UI.
-    * [http://127.0.0.1/redoc](http://127.0.0.1/redoc) This uses the Redoc UI with some documentations out of the box.
+    * [http://127.0.0.1/](http://127.0.0.1/) >> You can then navigate to the localhost to see your app in action.
+    * [http://127.0.0.1/docs](http://127.0.0.1/docs) >> This yields the OpenAPI Swagger UI.
+    * [http://127.0.0.1/redoc](http://127.0.0.1/redoc) >> This uses the Redoc UI with some documentations out of the box.
 
 ## Results
 

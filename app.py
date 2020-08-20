@@ -1,6 +1,7 @@
-# Core Pkg
+# App for fast API
 import uvicorn
-from fastapi import FastAPI,Query
+from fastapi import FastAPI, Query
+from typing import Optional
 
 # ML Aspect
 from modelPredict import getPrediction
@@ -49,6 +50,10 @@ async def predict(text):
 @app.post('/predict/{text}')
 async def predict(text):
 	return getPrediction(text)
+
+@app.post("/predict/")
+def read_item(text: Optional[str] = ''):
+    return {"text":text}
 
 
 
