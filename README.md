@@ -61,6 +61,10 @@ It is widely used to write production level API's for ML services.
     ```shell
     uvicorn app:app --host 0.0.0.0 --port 8000 --reload
     ```
+    or
+    ```shell
+    uvicorn app:app --host 0.0.0.0 --port 8000 --reload --workers 4
+    ```
 
     * [http://127.0.0.1/](http://127.0.0.1/) >> You can then navigate to the localhost to see your app in action.
     * [http://127.0.0.1/docs](http://127.0.0.1/docs) >> This yields the OpenAPI Swagger UI.
