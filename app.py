@@ -1,3 +1,5 @@
+# uvicorn app:app --host 0.0.0.0 --port 8000 --reload --workers 4
+
 # App for fast API
 import uvicorn
 from fastapi import FastAPI, Query
